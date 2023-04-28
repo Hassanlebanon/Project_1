@@ -1,0 +1,95 @@
+.maps {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 1fr auto;
+    height: 100%;
+    position: relative;
+    .map {
+        // z-index: -1;
+    }
+    .legend {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        padding: 10px;
+        text-align: center;
+        font-size: 1.5rem;
+        font-weight: $semiBold;
+        border-top: 1px solid $clrG;
+
+        .point {
+            display: grid;
+            grid-template-columns: auto auto;
+            gap: 10px;
+            align-items: center;
+            justify-content: center;
+
+            &:before {
+                content: '';
+                width: 15px;
+                height: 15px;
+                display: inline-block;
+                border-radius: $rad3;
+                background-color: $clrB;
+            }
+
+            &.blue:before {
+                background-color: $clrBl;
+            }
+            &.red:before {
+                background-color: $clrR;
+            }
+            &.yellow:before {
+                background-color: $clrY;
+            }
+        }
+        .report-toggle {
+            cursor: pointer;
+        }
+    }
+    .report {
+        position: absolute;
+        width: 300px;
+        left: 0;
+        height: calc(100% - 50px);
+        display: none;
+        background-color: #fff;
+        .approach {
+            border-radius: $rad;
+            // color: $clrW;
+            font-size: 1.3rem;
+            font-weight: $semiBold;
+            padding: 10px;
+            border: 1px solid #eee;
+            .date-map {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                .map {
+                    color: $clrBl;
+                }
+            }
+            .result {
+                display: flex;
+                align-items: center;
+                padding-top: 10px;
+                .circle {
+                    width: 15px;
+                    height: 15px;
+                    border-radius: 50%;
+                    &.red {
+                        background-color: red;
+                    }
+                    &.yellow {
+                        background-color: yellow;
+                    }
+                }
+                .text {
+                    padding-right: 5px;
+                }
+            }
+        }
+        &.active {
+            display: block;
+        }
+    }
+}

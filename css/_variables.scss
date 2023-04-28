@@ -1,0 +1,35 @@
+// colors
+$clr0: transparent; // Transparent
+$clrB: #000; // Black
+$clrW: #fff; // White
+$clrG: #eee; // Grey
+$clrG1: #aeb2b7; // Grey 1
+$clrD: #2a3542; // Dark
+$clrBl: #60c3ff; // Blue
+$clrGr: #016ea5; // Green
+$clrR: #ff6347; // Tomato
+$clrY: #ffff00; // Yellow
+$clrOr: #f8a721; // Orange
+$clrDBl: #2196f3; // dark Blue
+// social media colors
+$clrFb: #4267b2; // facebook
+$clrGl: #ea4335; // google
+$clrYt: #ff0000; // youtube
+$clrTw: #1da1f2; // twitter
+$clrPt: #bd081b; // pintrest
+$clrIs: #f7630d; // instagram
+// radius
+$rad: 3px;
+$rad1: 10px;
+$rad2: 50px;
+$rad3: 50%;
+// boldness
+$semiBold: 500;
+$bold: 700;
+// box shadow
+$shadow: 0 0 5px rgba($clrB, 0.3);
+// transition
+$trans: ease 0.3s all;
+// border
+$border: 1px solid $clrG;
+$border1: 1px solid darken($clrG, 5%);

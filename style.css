@@ -1,0 +1,381 @@
+* {
+  
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+
+  }
+  
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+  [class*="col-"] {
+    float: left;
+    padding: 15px;
+   
+  }
+
+  /* For mobile phones: */
+[class*="col-"] {
+    width: 100%;
+    /* border: 2px solid red; */
+  }
+  
+  @media only screen and (min-width: 600px) {
+    /* For tablets: */
+    .col-s-1 {width: 8.33%;}
+    .col-s-2 {width: 16.66%;}
+    .col-s-3 {width: 25%;}
+    .col-s-4 {width: 33.33%;}
+    .col-s-5 {width: 41.66%;}
+    .col-s-6 {width: 50%;}
+    .col-s-7 {width: 58.33%;}
+    .col-s-8 {width: 66.66%;}
+    .col-s-9 {width: 75%;}
+    .col-s-10 {width: 83.33%;}
+    .col-s-11 {width: 91.66%;}
+    .col-s-12 {width: 100%;}
+  }
+  @media only screen and (min-width: 768px) {
+    /* For desktop: */
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+  }
+
+  .aboutUs{
+    padding: 40px;
+  }
+
+ .aboutus-indeximg img{
+
+height: 500px;
+ }
+ .aboutus-index{
+    padding-top: 150px;
+    padding-left: 30px;
+    padding-bottom: 40px;
+ }
+ .aboutus-index h1{
+    color: #4A77B5;
+ }
+ .aboutus-index hr{
+    background-color: #18A4B5;
+    height: 3px;
+ }
+ .aboutus-index p {
+    color: #A2A2A2;
+    line-height: 1.5;
+ }
+ .aboutus-index button{
+    
+    border: 1px solid #4A77B5;
+background-color: white;
+color: #4A77B5;
+padding: 12px 24px;
+border-radius: 5px;
+font-size: 18px;
+font-weight: 500;
+/* text-transform: uppercase; */
+letter-spacing: 1px;
+cursor: pointer;
+ }
+ .aboutus-index button:hover{
+    color: white;
+    background-color: #4A77B5;
+    /* transform: scale(1.09); */
+    box-shadow: 10px;
+ }
+
+
+ /*services*/
+ .services{
+    text-align: center;
+    padding: 40px;
+ }
+ .servicesCrads-container{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    column-gap: 80px;
+   
+ }
+
+ .imgServiceCard-conatiner img{
+    width: 170px;
+    height: 170px;
+    padding-bottom: 30px;
+    
+ }
+ .serviceCard{
+    margin-top: 20px;
+    padding-left: 0px;
+    padding-right: 0px;
+   /* border:2px solid black; */
+ }
+ .serviceCard:hover{
+      transform: scale(1.09); 
+      box-shadow:30px;
+     
+     
+      
+ }
+ .serviceCard button{
+    border: 1px solid #4A77B5;
+background-color: white;
+color: #4A77B5;
+padding: 12px 24px;
+border-radius: 5px;
+font-size: 18px;
+font-weight: 500;
+
+/* text-transform: uppercase; */
+letter-spacing: 1px;
+cursor: pointer;
+
+ }
+
+
+ 
+ .serviceCard button:hover{
+    color: white;
+    background-color: #4A77B5;
+    /* transform: scale(1.09); */
+    box-shadow: 10px;
+ }
+.ourbrands{
+  text-align: center;
+  padding: 40px;
+}
+.ourbrands h1{
+    color:#4A77B5
+}
+.ourbrands p{
+
+}
+ .ourBrands-conatiner{
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    gap: 3px;
+ }
+
+ .brand-conatiner img{
+    width: 60%;
+ }
+
+
+
+
+
+
+
+
+
+/* 
+ ul{
+   list-style: none;
+ }
+ .footer{
+   background-color: #24262b;
+   padding:70px 0;
+   background:blue;
+ }
+ .footer-col{
+   width:25%;
+   padding: 0 15px;
+ }
+ .footer-col h4{
+   font-size:14px;
+   color:#ffffff;
+   text-transform: capitalize;
+   margin-bottom: 35px;
+   margin-top:10px;
+   font-weight: 500;
+   position: relative;
+ 
+ }
+ .footer-col h4::before{
+   content:'';
+   position: absolute;
+   left: 0;
+   bottom: -10px;
+   background-color:#e91e63;
+   height:2px;
+   box-sizing:border-box;
+   width:50px;
+ }
+ .footer-col ul li:not(:last-child){
+   margin-bottom:10px
+ 
+ }
+ 
+ .footer-col ul li a{
+   font-size:12px;
+   text-transform: capitalize;
+   color: #ffffff;
+   text-decoration: none;
+   font-weight: 300;
+   color: #bbbbbb;
+   display: block;
+ 
+ }
+ 
+ .footer-col ul li a:hover{
+   color:#ffffff;
+   padding-left: 8px;
+ }
+ .footer-col .social-links a{
+   display: inline-block;
+   height: 40px;
+   width: 40px;
+   background-color: rgba(255.255.255.0.2);
+   margin-right:0 10px 10px 0;
+   text-align: center;
+   line-height:40px;
+   border-raduis: 50%;
+   color:#ffffff;
+ } */
+
+
+ .footer-left{
+   background-color: red;
+ }
+ .footer-middle{
+   background-color: #4A77B5;
+ }
+ .footer-right{
+   background-color: aquamarine;
+ }
+
+
+
+ /*header*/
+
+.nav1-container{
+  background-color: lightgray ;
+  width: 100%;
+  z-index: 999;
+  justify-content: space-between;
+  align-items: center;
+  
+
+}
+
+
+
+
+ .nav1-left{
+  display: flex;
+  gap: 25px;
+  color: #0066cc;
+
+ }
+
+ .nav1email-container{
+  display: flex;
+  gap: 0px;
+ }
+
+ .nav1phone-container{
+    display: flex;
+    gap: 0px;
+  
+ }
+ 
+ .nav1-right{
+  display: flex;
+  justify-content: end;
+  
+  
+ }
+ .nav1-right ul{
+  display: flex;
+  gap: 14px;
+  list-style-type: none;
+ }
+ .nav2-container{
+  background-color: #f0f0f0;
+  width: 100%;
+  z-index: 999;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+ 
+ }
+ .nav2-left{
+  display: flex;
+  gap: 25px;
+  color: #0066cc;
+  text-decoration: uppercase;
+  cursor: pointer;
+  color: #007bff;
+ }
+ .logo{
+  text-decoration: none;
+  color: #3a6cf4;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 1.8em;
+}
+.list{
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+}
+
+.list a{
+  color: #3a6cf4;
+  text-decoration: none;
+  font-size: 1.1em;
+  font-weight: 500;
+  padding-left: 30px;
+}
+
+.list a:hover{
+  color: #601cfc;
+}
+
+/*Footer*/
+.footer{
+  background-color: blue;
+}
+.container{
+  background: var(bleu);
+  max-width:1170px;
+  margin:auto;
+}
+.container-row{
+  display:flex;
+  justify-content: space-between;
+
+}
+.container-row h4{
+  color: white;
+}
+.container-row ul{
+  margin-left:-50px;
+  float: left;
+}
+.container-row li{
+  list-style: none;
+  margin-top: 9px;
+  left: 10px;
+  
+  
+}
+.container-row a{
+  text-decoration: none;
+  margin: 10x;
+  color: rgb(185, 188, 190);
+}
